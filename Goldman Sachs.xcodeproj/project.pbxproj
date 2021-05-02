@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F7187C3A263E7BBC0084A473 /* SearchLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7187C39263E7BBC0084A473 /* SearchLocationViewModel.swift */; };
+		F7187C3D263E7F5C0084A473 /* SearchLocationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7187C3C263E7F5C0084A473 /* SearchLocationInteractor.swift */; };
+		F7187C42263E847D0084A473 /* SearchLocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7187C41263E847D0084A473 /* SearchLocationTableViewCell.swift */; };
+		F76C0831263BFF7900240668 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76C0830263BFF7900240668 /* AppDelegate.swift */; };
+		F76C0833263BFF7900240668 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76C0832263BFF7900240668 /* SceneDelegate.swift */; };
+		F76C0835263BFF7900240668 /* CurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76C0834263BFF7900240668 /* CurrentLocationViewController.swift */; };
+		F76C0838263BFF7900240668 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76C0836263BFF7900240668 /* Main.storyboard */; };
+		F76C083A263BFF7A00240668 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76C0839263BFF7A00240668 /* Assets.xcassets */; };
+		F76C083D263BFF7A00240668 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76C083B263BFF7A00240668 /* LaunchScreen.storyboard */; };
+		F76C084B263C006400240668 /* CurrentLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76C084A263C006400240668 /* CurrentLocationViewModel.swift */; };
+		F76C084F263C008500240668 /* CurrentLocationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76C084E263C008500240668 /* CurrentLocationInteractor.swift */; };
+		F76C0853263C010A00240668 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76C0852263C010A00240668 /* NetworkService.swift */; };
+		F76C0859263C013900240668 /* CurrentLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76C0858263C013900240668 /* CurrentLocationService.swift */; };
+		F77F147D263C5B7100AA00C5 /* HourlyWeatherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F147C263C5B7100AA00C5 /* HourlyWeatherCollectionViewCell.swift */; };
+		F77F1481263C5B9100AA00C5 /* HourlyWeatherCollectionViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F1480263C5B9100AA00C5 /* HourlyWeatherCollectionViewCellModel.swift */; };
+		F7AE634F263ED00B00E0A2C2 /* CityCollectionViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AE634E263ED00B00E0A2C2 /* CityCollectionViewCellModel.swift */; };
+		F7D6615D263C0F8A00891DF3 /* WeatherDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D6615C263C0F8A00891DF3 /* WeatherDataModel.swift */; };
+		F7D66161263C22E600891DF3 /* URLGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D66160263C22E600891DF3 /* URLGenerator.swift */; };
+		F7D66165263C234000891DF3 /* PathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D66164263C234000891DF3 /* PathGenerator.swift */; };
+		F7D66169263C235700891DF3 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D66168263C235700891DF3 /* Errors.swift */; };
+		F7D6616C263C3D2000891DF3 /* APIKEYS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D6616B263C3D2000891DF3 /* APIKEYS.swift */; };
+		F7E8C071263D5DEF00AD2663 /* CityCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E8C070263D5DEF00AD2663 /* CityCollectionViewCell.swift */; };
+		F7E8C076263D5F0700AD2663 /* Oswald-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F77F1479263C514800AA00C5 /* Oswald-VariableFont_wght.ttf */; };
+		F7E8C079263D68CC00AD2663 /* AppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E8C078263D68CC00AD2663 /* AppHelper.swift */; };
+		F7E8C07C263D757A00AD2663 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E8C07B263D757A00AD2663 /* Extensions.swift */; };
+		F7F631D3263EA1F300431750 /* CityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F631D2263EA1F300431750 /* CityDetailViewController.swift */; };
+		F7F631D7263EA4B000431750 /* CityDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F631D6263EA4B000431750 /* CityDetailViewModel.swift */; };
+		F7F631DA263EA4DE00431750 /* CityDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F631D9263EA4DE00431750 /* CityDetailInteractor.swift */; };
+		F7F631DF263EA61300431750 /* CityWeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F631DE263EA61300431750 /* CityWeatherService.swift */; };
+		F7F631E4263EA8F000431750 /* CityWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F631E3263EA8F000431750 /* CityWeatherModel.swift */; };
+		F7F631ED263EB26800431750 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F631EC263EB26800431750 /* PersistenceService.swift */; };
+		F7F631F2263EB57A00431750 /* Goldman Sachs.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7F631F0263EB57A00431750 /* Goldman Sachs.xcdatamodeld */; };
+		F7FBD1F5263DA6300040E5C2 /* SearchLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FBD1F4263DA6300040E5C2 /* SearchLocationModel.swift */; };
+		F7FBD1F8263DA85A0040E5C2 /* SearchCityLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FBD1F7263DA85A0040E5C2 /* SearchCityLocationService.swift */; };
+		F7FBD1FC263DACA80040E5C2 /* SearchLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FBD1FB263DACA80040E5C2 /* SearchLocationViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F7187C39263E7BBC0084A473 /* SearchLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLocationViewModel.swift; sourceTree = "<group>"; };
+		F7187C3C263E7F5C0084A473 /* SearchLocationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLocationInteractor.swift; sourceTree = "<group>"; };
+		F7187C41263E847D0084A473 /* SearchLocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLocationTableViewCell.swift; sourceTree = "<group>"; };
+		F76C082D263BFF7900240668 /* Goldman Sachs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Goldman Sachs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F76C0830263BFF7900240668 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F76C0832263BFF7900240668 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F76C0834263BFF7900240668 /* CurrentLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationViewController.swift; sourceTree = "<group>"; };
+		F76C0837263BFF7900240668 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F76C0839263BFF7A00240668 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F76C083C263BFF7A00240668 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F76C083E263BFF7A00240668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F76C084A263C006400240668 /* CurrentLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationViewModel.swift; sourceTree = "<group>"; };
+		F76C084E263C008500240668 /* CurrentLocationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationInteractor.swift; sourceTree = "<group>"; };
+		F76C0852263C010A00240668 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		F76C0858263C013900240668 /* CurrentLocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationService.swift; sourceTree = "<group>"; };
+		F77F1479263C514800AA00C5 /* Oswald-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		F77F147C263C5B7100AA00C5 /* HourlyWeatherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyWeatherCollectionViewCell.swift; sourceTree = "<group>"; };
+		F77F1480263C5B9100AA00C5 /* HourlyWeatherCollectionViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyWeatherCollectionViewCellModel.swift; sourceTree = "<group>"; };
+		F7AE634E263ED00B00E0A2C2 /* CityCollectionViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCollectionViewCellModel.swift; sourceTree = "<group>"; };
+		F7D6615C263C0F8A00891DF3 /* WeatherDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataModel.swift; sourceTree = "<group>"; };
+		F7D66160263C22E600891DF3 /* URLGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLGenerator.swift; sourceTree = "<group>"; };
+		F7D66164263C234000891DF3 /* PathGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathGenerator.swift; sourceTree = "<group>"; };
+		F7D66168263C235700891DF3 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		F7D6616B263C3D2000891DF3 /* APIKEYS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKEYS.swift; sourceTree = "<group>"; };
+		F7E8C070263D5DEF00AD2663 /* CityCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityCollectionViewCell.swift; sourceTree = "<group>"; };
+		F7E8C078263D68CC00AD2663 /* AppHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHelper.swift; sourceTree = "<group>"; };
+		F7E8C07B263D757A00AD2663 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F7F631D2263EA1F300431750 /* CityDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailViewController.swift; sourceTree = "<group>"; };
+		F7F631D6263EA4B000431750 /* CityDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailViewModel.swift; sourceTree = "<group>"; };
+		F7F631D9263EA4DE00431750 /* CityDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailInteractor.swift; sourceTree = "<group>"; };
+		F7F631DE263EA61300431750 /* CityWeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWeatherService.swift; sourceTree = "<group>"; };
+		F7F631E3263EA8F000431750 /* CityWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWeatherModel.swift; sourceTree = "<group>"; };
+		F7F631EC263EB26800431750 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		F7F631F1263EB57A00431750 /* Goldman Sachs.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Goldman Sachs.xcdatamodel"; sourceTree = "<group>"; };
+		F7F631FD263EBA5500431750 /* City+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "City+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F7F631FE263EBA5500431750 /* City+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "City+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F7FBD1F4263DA6300040E5C2 /* SearchLocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLocationModel.swift; sourceTree = "<group>"; };
+		F7FBD1F7263DA85A0040E5C2 /* SearchCityLocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityLocationService.swift; sourceTree = "<group>"; };
+		F7FBD1FB263DACA80040E5C2 /* SearchLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLocationViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F76C082A263BFF7900240668 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F7187C40263E845B0084A473 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F7187C41263E847D0084A473 /* SearchLocationTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F76C0824263BFF7900240668 = {
+			isa = PBXGroup;
+			children = (
+				F76C082F263BFF7900240668 /* Goldman Sachs */,
+				F76C082E263BFF7900240668 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F76C082E263BFF7900240668 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F76C082D263BFF7900240668 /* Goldman Sachs.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F76C082F263BFF7900240668 /* Goldman Sachs */ = {
+			isa = PBXGroup;
+			children = (
+				F76C0847263BFFE000240668 /* App Delegate */,
+				F76C0848263BFFF300240668 /* Scenes */,
+				F76C0846263BFFA600240668 /* Storyboards */,
+				F76C0851263C00F000240668 /* Services */,
+				F76C0861263C017600240668 /* Models */,
+				F77F1478263C512C00AA00C5 /* Support */,
+				F76C0839263BFF7A00240668 /* Assets.xcassets */,
+				F76C083E263BFF7A00240668 /* Info.plist */,
+				F7F631F0263EB57A00431750 /* Goldman Sachs.xcdatamodeld */,
+			);
+			path = "Goldman Sachs";
+			sourceTree = "<group>";
+		};
+		F76C0846263BFFA600240668 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F76C083B263BFF7A00240668 /* LaunchScreen.storyboard */,
+				F76C0836263BFF7900240668 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F76C0847263BFFE000240668 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				F76C0830263BFF7900240668 /* AppDelegate.swift */,
+				F76C0832263BFF7900240668 /* SceneDelegate.swift */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		F76C0848263BFFF300240668 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				F7F631D0263EA1BC00431750 /* City Detail */,
+				F7FBD1FA263DAC920040E5C2 /* Search Location */,
+				F76C0849263C000A00240668 /* Current Location */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		F76C0849263C000A00240668 /* Current Location */ = {
+			isa = PBXGroup;
+			children = (
+				F77F147B263C5B6300AA00C5 /* Cells */,
+				F76C0834263BFF7900240668 /* CurrentLocationViewController.swift */,
+				F76C084A263C006400240668 /* CurrentLocationViewModel.swift */,
+				F76C084E263C008500240668 /* CurrentLocationInteractor.swift */,
+			);
+			path = "Current Location";
+			sourceTree = "<group>";
+		};
+		F76C0851263C00F000240668 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F7F631EB263EB23B00431750 /* Persistence */,
+				F7F631DD263EA5C200431750 /* City Weather */,
+				F76C085C263C014200240668 /* Search Location */,
+				F76C0857263C012200240668 /* Current Location */,
+				F76C0856263C010E00240668 /* Network */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F76C0856263C010E00240668 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F76C0852263C010A00240668 /* NetworkService.swift */,
+				F7D66160263C22E600891DF3 /* URLGenerator.swift */,
+				F7D66164263C234000891DF3 /* PathGenerator.swift */,
+				F7D66168263C235700891DF3 /* Errors.swift */,
+				F7D6616B263C3D2000891DF3 /* APIKEYS.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F76C0857263C012200240668 /* Current Location */ = {
+			isa = PBXGroup;
+			children = (
+				F76C0858263C013900240668 /* CurrentLocationService.swift */,
+			);
+			path = "Current Location";
+			sourceTree = "<group>";
+		};
+		F76C085C263C014200240668 /* Search Location */ = {
+			isa = PBXGroup;
+			children = (
+				F7FBD1F7263DA85A0040E5C2 /* SearchCityLocationService.swift */,
+			);
+			path = "Search Location";
+			sourceTree = "<group>";
+		};
+		F76C0861263C017600240668 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F7D6615C263C0F8A00891DF3 /* WeatherDataModel.swift */,
+				F7FBD1F4263DA6300040E5C2 /* SearchLocationModel.swift */,
+				F7F631E3263EA8F000431750 /* CityWeatherModel.swift */,
+				F7F631FD263EBA5500431750 /* City+CoreDataClass.swift */,
+				F7F631FE263EBA5500431750 /* City+CoreDataProperties.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F77F1478263C512C00AA00C5 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				F7E8C078263D68CC00AD2663 /* AppHelper.swift */,
+				F7E8C07B263D757A00AD2663 /* Extensions.swift */,
+				F77F1479263C514800AA00C5 /* Oswald-VariableFont_wght.ttf */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		F77F147B263C5B6300AA00C5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F77F147C263C5B7100AA00C5 /* HourlyWeatherCollectionViewCell.swift */,
+				F77F1480263C5B9100AA00C5 /* HourlyWeatherCollectionViewCellModel.swift */,
+				F7E8C070263D5DEF00AD2663 /* CityCollectionViewCell.swift */,
+				F7AE634E263ED00B00E0A2C2 /* CityCollectionViewCellModel.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F7F631D0263EA1BC00431750 /* City Detail */ = {
+			isa = PBXGroup;
+			children = (
+				F7F631D2263EA1F300431750 /* CityDetailViewController.swift */,
+				F7F631D6263EA4B000431750 /* CityDetailViewModel.swift */,
+				F7F631D9263EA4DE00431750 /* CityDetailInteractor.swift */,
+			);
+			path = "City Detail";
+			sourceTree = "<group>";
+		};
+		F7F631DD263EA5C200431750 /* City Weather */ = {
+			isa = PBXGroup;
+			children = (
+				F7F631DE263EA61300431750 /* CityWeatherService.swift */,
+			);
+			path = "City Weather";
+			sourceTree = "<group>";
+		};
+		F7F631EB263EB23B00431750 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				F7F631EC263EB26800431750 /* PersistenceService.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		F7FBD1FA263DAC920040E5C2 /* Search Location */ = {
+			isa = PBXGroup;
+			children = (
+				F7187C40263E845B0084A473 /* Cells */,
+				F7FBD1FB263DACA80040E5C2 /* SearchLocationViewController.swift */,
+				F7187C39263E7BBC0084A473 /* SearchLocationViewModel.swift */,
+				F7187C3C263E7F5C0084A473 /* SearchLocationInteractor.swift */,
+			);
+			path = "Search Location";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F76C082C263BFF7900240668 /* Goldman Sachs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F76C0841263BFF7A00240668 /* Build configuration list for PBXNativeTarget "Goldman Sachs" */;
+			buildPhases = (
+				F76C0829263BFF7900240668 /* Sources */,
+				F76C082A263BFF7900240668 /* Frameworks */,
+				F76C082B263BFF7900240668 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Goldman Sachs";
+			productName = "Goldman Sachs";
+			productReference = F76C082D263BFF7900240668 /* Goldman Sachs.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F76C0825263BFF7900240668 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					F76C082C263BFF7900240668 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = F76C0828263BFF7900240668 /* Build configuration list for PBXProject "Goldman Sachs" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F76C0824263BFF7900240668;
+			productRefGroup = F76C082E263BFF7900240668 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F76C082C263BFF7900240668 /* Goldman Sachs */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F76C082B263BFF7900240668 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7E8C076263D5F0700AD2663 /* Oswald-VariableFont_wght.ttf in Resources */,
+				F76C083D263BFF7A00240668 /* LaunchScreen.storyboard in Resources */,
+				F76C083A263BFF7A00240668 /* Assets.xcassets in Resources */,
+				F76C0838263BFF7900240668 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F76C0829263BFF7900240668 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7FBD1FC263DACA80040E5C2 /* SearchLocationViewController.swift in Sources */,
+				F7F631DA263EA4DE00431750 /* CityDetailInteractor.swift in Sources */,
+				F7F631F2263EB57A00431750 /* Goldman Sachs.xcdatamodeld in Sources */,
+				F76C0835263BFF7900240668 /* CurrentLocationViewController.swift in Sources */,
+				F7E8C07C263D757A00AD2663 /* Extensions.swift in Sources */,
+				F76C084F263C008500240668 /* CurrentLocationInteractor.swift in Sources */,
+				F77F147D263C5B7100AA00C5 /* HourlyWeatherCollectionViewCell.swift in Sources */,
+				F76C0859263C013900240668 /* CurrentLocationService.swift in Sources */,
+				F7D6616C263C3D2000891DF3 /* APIKEYS.swift in Sources */,
+				F76C084B263C006400240668 /* CurrentLocationViewModel.swift in Sources */,
+				F7FBD1F8263DA85A0040E5C2 /* SearchCityLocationService.swift in Sources */,
+				F7D66169263C235700891DF3 /* Errors.swift in Sources */,
+				F7187C42263E847D0084A473 /* SearchLocationTableViewCell.swift in Sources */,
+				F7E8C071263D5DEF00AD2663 /* CityCollectionViewCell.swift in Sources */,
+				F76C0831263BFF7900240668 /* AppDelegate.swift in Sources */,
+				F77F1481263C5B9100AA00C5 /* HourlyWeatherCollectionViewCellModel.swift in Sources */,
+				F7D6615D263C0F8A00891DF3 /* WeatherDataModel.swift in Sources */,
+				F7F631DF263EA61300431750 /* CityWeatherService.swift in Sources */,
+				F76C0853263C010A00240668 /* NetworkService.swift in Sources */,
+				F7AE634F263ED00B00E0A2C2 /* CityCollectionViewCellModel.swift in Sources */,
+				F7D66161263C22E600891DF3 /* URLGenerator.swift in Sources */,
+				F7F631E4263EA8F000431750 /* CityWeatherModel.swift in Sources */,
+				F7187C3A263E7BBC0084A473 /* SearchLocationViewModel.swift in Sources */,
+				F7187C3D263E7F5C0084A473 /* SearchLocationInteractor.swift in Sources */,
+				F7F631D7263EA4B000431750 /* CityDetailViewModel.swift in Sources */,
+				F7E8C079263D68CC00AD2663 /* AppHelper.swift in Sources */,
+				F7FBD1F5263DA6300040E5C2 /* SearchLocationModel.swift in Sources */,
+				F76C0833263BFF7900240668 /* SceneDelegate.swift in Sources */,
+				F7D66165263C234000891DF3 /* PathGenerator.swift in Sources */,
+				F7F631D3263EA1F300431750 /* CityDetailViewController.swift in Sources */,
+				F7F631ED263EB26800431750 /* PersistenceService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F76C0836263BFF7900240668 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F76C0837263BFF7900240668 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F76C083B263BFF7A00240668 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F76C083C263BFF7A00240668 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F76C083F263BFF7A00240668 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F76C0840263BFF7A00240668 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F76C0842263BFF7A00240668 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 989RW99APU;
+				INFOPLIST_FILE = "Goldman Sachs/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "JainNjhawan.Goldman-Sachs";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F76C0843263BFF7A00240668 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 989RW99APU;
+				INFOPLIST_FILE = "Goldman Sachs/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "JainNjhawan.Goldman-Sachs";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F76C0828263BFF7900240668 /* Build configuration list for PBXProject "Goldman Sachs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F76C083F263BFF7A00240668 /* Debug */,
+				F76C0840263BFF7A00240668 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F76C0841263BFF7A00240668 /* Build configuration list for PBXNativeTarget "Goldman Sachs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F76C0842263BFF7A00240668 /* Debug */,
+				F76C0843263BFF7A00240668 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F7F631F0263EB57A00431750 /* Goldman Sachs.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F7F631F1263EB57A00431750 /* Goldman Sachs.xcdatamodel */,
+			);
+			currentVersion = F7F631F1263EB57A00431750 /* Goldman Sachs.xcdatamodel */;
+			path = "Goldman Sachs.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F76C0825263BFF7900240668 /* Project object */;
+}
