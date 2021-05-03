@@ -42,7 +42,7 @@ class SearchLocationViewController: UIViewController {
   }
   
   func animateViews(present: Bool = true) {
-    searchViewTopConstraint.constant = present ? 50 : -300
+    searchViewTopConstraint.constant = present ? 0 : -300
     UIView.animate(withDuration: 0.8,
                    delay: 0,
                    usingSpringWithDamping: 0.8,
